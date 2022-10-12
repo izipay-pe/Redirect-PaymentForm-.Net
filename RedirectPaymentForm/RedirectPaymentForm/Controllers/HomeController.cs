@@ -25,20 +25,20 @@ namespace RedirectPaymentForm.Controllers
             //CODIGO SOLES=604 DOLARES=840
             ViewBag.vads_currency = "604";
             //NÚMERO DE CELULAR
-            ViewBag.vads_cust_cell_phone = "XXXXXXXXXXXXXX";
+            ViewBag.vads_cust_cell_phone = "987654321";
             //CORREO
-            ViewBag.vads_cust_email = "XXXXXXXXXXXXXXXXXXXXXXXX";
+            ViewBag.vads_cust_email = "ejemplo@hotmail.com";
             //NOMBRES
-            ViewBag.vads_cust_first_name = "XXXXXXXXXXXXXX";
+            ViewBag.vads_cust_first_name = "Nombre";
             //APELLIDOS
-            ViewBag.vads_cust_last_name = "XXXXXXXXXXXXX";
+            ViewBag.vads_cust_last_name = "Apellido";
             //NÚMERO DE TELEFONO 
-            ViewBag.vads_cust_phone = "XXXXXXXX";
+            ViewBag.vads_cust_phone = "5445664";
             ViewBag.vads_page_action = "PAYMENT";
             ViewBag.vads_payment_config = "SINGLE";
-            //USUARIO DE BACK OFFICE VENDEDOR
-            ViewBag.vads_site_id = "46899889";
-            //CAMBIAR DÍA ACTUAL CON 5 HORAS DE DIFERENCIA CON EL FORMATO  aaaammddhhmmss
+            //USUARIO DE BACK OFFICE VENDEDOR (89289758 = usuario de prueba)
+            ViewBag.vads_site_id = "89289758";
+            //CAMBIAR DÍA ACTUAL CON 5 HORAS DE DIFERENCIA CON EL FORMATO  aaaammddhhmmss (202210121550)
             ViewBag.vads_trans_date = "aaaammddhhmmss";
             ViewBag.vads_trans_id = "rf54hY";
             ViewBag.vads_version = "V2";
