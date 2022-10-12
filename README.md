@@ -21,9 +21,15 @@ git clone https://github.com/izipay-pe/PopIn-PaymentForm-T1.Net.git
 ## 3.- Configurar los Datos a enviar
 ![Claves](images/datos.png)
 
-## 4.- Correr Proyecto
+## 4.- Conseguir firma desde un Generador Online
+* Ingresar al Generador Online haciendo click [Aquí](https://herramientas-online.com/generador-hmac-online.html)
+* 
+![Claves](images/datos.png)
+
+
+## 5.- Correr Proyecto
 * IIS Express
 * Correr proyecto con el Explorador Web de su preferencia
 
-## 5.- Demo
+## 6.- Demo
 ![demo](images/demo.png)
