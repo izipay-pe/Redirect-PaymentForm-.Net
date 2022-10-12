@@ -24,7 +24,7 @@ git clone https://github.com/izipay-pe/PopIn-PaymentForm-T1.Net.git
 ## 4.- Conseguir firma desde un Generador Online
 * Ingresar al Generador Online haciendo click [Aquí](https://herramientas-online.com/generador-hmac-online.html)
 * 
-![Claves](images/datos.png)
+![Claves](images/generador.png)
 
 
 ## 5.- Correr Proyecto
