@@ -33,7 +33,7 @@ CLAVE BACK OFFICE VENDEDOR (TEST O PRODUCCION)
 *TIPO DE HMAC
 SHA256
 ``` 
-* Darke en Crear 
+* Darle en Crear 
 ![Claves](images/generador.png)
 * Generara una clave 
 ![Claves](images/generador2.png)
