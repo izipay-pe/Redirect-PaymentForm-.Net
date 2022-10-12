@@ -18,8 +18,8 @@ git clone https://github.com/izipay-pe/PopIn-PaymentForm-T1.Net.git
 * Obtener claves de integración, [Ver ejemplo](https://github.com/JunioratWork/Obtener_Credenciales#readme)
 * Editar el archivo `HomeController.cs` con los datos que quieren enviar solo editar los campos que estan con un comentario encima //
  
-## 3.- Configurar Claves
-![Claves](images/credenciales.png)
+## 3.- Configurar los Datos a enviar
+![Claves](images/datos.png)
 
 ## 4.- Correr Proyecto
 * IIS Express
