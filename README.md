@@ -23,7 +23,7 @@ git clone https://github.com/izipay-pe/Redirect-PaymentForm-T1.Net.git
 
 ## 2.- Ejecutar el proyecto, cambiar claves de acceso y demas 
 
-**Nota**: Reemplace **[CHANGE_ME]** con sus credenciales de `API REST` extraídas desde el Back Office Vendedor, ver [Requisitos Previos](#Requisitos_Previos).
+**Nota**: Reemplace **[CHANGE_ME]** con sus credenciales de `CLAVES` extraídas desde el Back Office Vendedor, ver [Requisitos Previos](#Requisitos_Previos).
 
 * Editar el archivo en la siguiente ruta `RedirectPaymentForm -> Controllers -> HomeController.cs` con las claves de su Back Office Vendedor
 
