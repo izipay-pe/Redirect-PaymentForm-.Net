@@ -2,7 +2,7 @@
 
 Ejemplo del formulario en REDIRECCION de Izipay con C# .NET, para poder ejecutar el siguiente ejemplo seguir los pasos del presente manual.
 
-![pagar](images/demofinal.png)
+![pagar](images/demofinal2.png)
 
 <a name="Requisitos_Previos"></a>
 ## Requisitos Previos
@@ -27,7 +27,7 @@ git clone https://github.com/izipay-pe/Redirect-PaymentForm-T1.Net.git
 
 * Editar el archivo en la siguiente ruta `RedirectPaymentForm -> Controllers -> HomeController.cs` con las claves de su Back Office Vendedor
 
- ![controlador](images/controlador.png)
+ ![controlador](images/controlador2.png)
 
   ```c#   
   public IActionResult Index()
