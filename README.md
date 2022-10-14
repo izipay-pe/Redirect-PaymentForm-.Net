@@ -1,46 +1,67 @@
 # Redirect-PaymentForm-T1.Net
 
-Ejemplo del formulario en REDIRECCION de Izipay con C# .NET.
+Ejemplo del formulario en REDIRECCION de Izipay con C# .NET, para poder ejecutar el siguiente ejemplo seguir los pasos del presente manual.
 ![pagar](images/demofinal.png)
 
+<a name="Requisitos_Previos"></a>
 ## Requisitos Previos
 
+* Extraer credenciales del Back Office Vendedor. [Guía Aquí](https://github.com/izipay-pe/obtener-credenciales-de-conexion)
 * Instalar Visual Studio [Aquí](https://visualstudio.microsoft.com/es/)
 * Version de .NET CORE de 3 en adelante
 
-## 1.- Descargar
+## 1.- Crear el proyecto
 Descargar el proyecto .zip haciendo click [Aquí](https://github.com/izipay-pe/PopIn-PaymentForm-T1.Net/archive/refs/heads/main.zip) o clonarlo desde Git.
 ```sh
 git clone https://github.com/izipay-pe/PopIn-PaymentForm-T1.Net.git
 ``` 
+* Correr con IIS Express de manera Local 
+* Ejecútelo y pruébelo con el siguiente comando: `F5` desde la Vista `Home` `Index.cshtml` y abrira con su navegador web predeterminado
 
-## 2.- Obtener Claves
-* Obtener Usuario, [Ver ejemplo](https://github.com/izipay-pe/obtener-credenciales-de-conexion#readme)
-* Editar el archivo `HomeController.cs` con los datos que quieren enviar solo editar los campos que estan con un comentario encima //
+  ver el resultado en: "https://localhost:44345/"
+
+## 2.- Ejecutar el proyecto, cambiar claves de acceso y demas 
+
+**Nota**: Reemplace **[CHANGE_ME]** con sus credenciales de `API REST` extraídas desde el Back Office Vendedor, ver [Requisitos Previos](#Requisitos_Previos).
+
+* Editar el archivo en la siguiente ruta `PopInPaymentForm -> Models -> PaymentModel.cs` con las claves de su Back Office Vendedor
+
+  ![ruta](images/ruta.png)
+
+  ```c#   
+  public class PaymentModel
+      {
+          private const string _usuario = "~~CHANGE_ME_USER~~";
+          private const string _contraseña = "~~CHANGE_ME_KEY~~";
+          private const string _clave_JS = "~~CHANGE_ME_PUBLIC_KEY~~";
+          private const string _clave_SHA256 = "~~CHANGE_ME_KEY_HMAC-SHA-256~~";
+          private const string _servidor_API = "https://api.micuentaweb.pe/";
+       }
+  ```
+  
+## 3.- Transacción de prueba
+
+El formulario de pago está listo, puede intentar realizar una transacción utilizando una tarjeta de prueba con la barra de herramientas de depuración (en la parte inferior de la página).
+
+  ![tarjeta](images/tarjetasprueba2.png)
+
+Para obtener más información, eche un vistazo a:
+
+- [Formulario incrustado: prueba rápida](https://secure.micuentaweb.pe/doc/es-PE/rest/V4.0/javascript/quick_start_js.html)
+- [Primeros pasos: pago simple](https://secure.micuentaweb.pe/doc/es-PE/rest/V4.0/javascript/guide/start.html)
+- [Servicios web - referencia de la API REST](https://secure.micuentaweb.pe/doc/es-PE/rest/V4.0/api/reference.html)
  
-## 3.- Configurar los Datos a enviar
-![Claves](images/datos.png)
+## 4.- Implementar IPN
 
-## 4.- Conseguir firma desde un Generador Online
-* Ingresar al Generador Online haciendo click [Aquí](https://herramientas-online.com/generador-hmac-online.html)
-* En "Mensaje a Codificar" colocar los valores tal cual como los del archivo `HomeController.cs` 
-```sh
-Formato de Ejemplo:
-*MENSAJE A CODIFICAR
-INTERACTIVE+5000+TEST+604+987654321+ejemplo@hotmail.com+Nombre+Apellido+5445664+PAYMENT+SINGLE+usuariobackoffice+aaaammddhhmmss+rf54hY+V2+clavebackoffice
-*PALABRA SECRETA
-CLAVE BACK OFFICE VENDEDOR (TEST O PRODUCCION)
-*TIPO DE HMAC
-SHA256
-``` 
-* Darle en Crear 
-![Claves](images/generador.png)
-* Generara una clave 
-![Claves](images/generador2.png)
+* Ver manual de implementacion de la IPN [Aquí](https://secure.micuentaweb.pe/doc/es-PE/rest/V4.0/kb/payment_done.html)
 
-## 5.- Correr Proyecto
-* IIS Express
-* Correr proyecto con el Explorador Web de su preferencia
+* Ver el ejemplo de la respuesta IPN con PHP [Aquí](https://github.com/izipay-pe/Redirect-PaymentForm-IpnT1-PHP)
 
-## 6.- Demo
-![demo](images/demo.png)
+* Ver el ejemplo de la respuesta IPN con NODE.JS [Aquí](https://github.com/izipay-pe/Response-PaymentFormT1-Ipn)
+
+                                      
+
+
+
+
+
