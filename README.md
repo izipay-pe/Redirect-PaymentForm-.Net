@@ -30,14 +30,17 @@ git clone https://github.com/izipay-pe/Redirect-PaymentForm-T1.Net.git
   ![ruta](images/ruta.png)
 
   ```c#   
-  public class PaymentModel
-      {
-          private const string _usuario = "~~CHANGE_ME_USER~~";
-          private const string _contraseña = "~~CHANGE_ME_KEY~~";
-          private const string _clave_JS = "~~CHANGE_ME_PUBLIC_KEY~~";
-          private const string _clave_SHA256 = "~~CHANGE_ME_KEY_HMAC-SHA-256~~";
-          private const string _servidor_API = "https://api.micuentaweb.pe/";
-       }
+  public IActionResult Index()
+        {
+            PaymentModel pago = new PaymentModel();
+            pago.vads_action_mode = "INTERACTIVE";
+            pago.vads_page_action = "PAYMENT";
+            pago.vads_payment_config = "SINGLE";
+            pago.vads_version = "V2";
+            pago.KEY = "~~CHANGE_ME_KEY~~";
+
+            return View(pago);
+        }  
   ```
   
 ## 3.- Transacción de prueba
