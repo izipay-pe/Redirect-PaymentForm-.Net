@@ -25,7 +25,7 @@ git clone https://github.com/izipay-pe/Redirect-PaymentForm-T1.Net.git
 
 **Nota**: Reemplace **[CHANGE_ME]** con sus credenciales de `API REST` extraídas desde el Back Office Vendedor, ver [Requisitos Previos](#Requisitos_Previos).
 
-* Editar el archivo en la siguiente ruta `PopInPaymentForm -> Models -> PaymentModel.cs` con las claves de su Back Office Vendedor
+* Editar el archivo en la siguiente ruta `RedirectPaymentForm -> Controllers -> HomeController.cs` con las claves de su Back Office Vendedor
 
   ![ruta](images/ruta.png)
 
