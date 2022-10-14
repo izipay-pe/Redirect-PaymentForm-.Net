@@ -1,45 +1,136 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿@model RedirectPaymentForm.Models.PaymentModel;
 
+<!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.88.1">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Izipay</title>
 
-    <!-- BOOTSTRAP   -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto">
 </head>
-<body class="bg-light">
-    <div class="container">
-            <div class="py-5 text-center">
-                <h2>Pasarela de Pagos</h2>
+<body>
+
+    <div class="signupFrm">
+
+        <div class="Iam">
+            <div style="margin-left: 0px; color: #FF4240; font: normal 30px Montserrat, sans-serif; color: #999;">
+                <h2>Ejemplo de un formulario en:</h2>
             </div>
-                        <form method="POST" action="https://secure.micuentaweb.pe/vads-payment/">
-                        <input type="hidden" name="vads_action_mode" value="@ViewBag.vads_action_mode" />
-                        <input type="hidden" name="vads_amount" value="@ViewBag.vads_amount" />
-                        <input type="hidden" name="vads_ctx_mode" value="@ViewBag.vads_ctx_mode" />
-                        <input type="hidden" name="vads_currency" value="@ViewBag.vads_currency" />
-                        <input type="hidden" name="vads_cust_cell_phone" value="@ViewBag.vads_cust_cell_phone" />
-                        <input type="hidden" name="vads_cust_email" value="@ViewBag.vads_cust_email" />
-                        <input type="hidden" name="vads_cust_first_name" value="@ViewBag.vads_cust_first_name" />
-                        <input type="hidden" name="vads_cust_last_name" value="@ViewBag.vads_cust_last_name" />
-                        <input type="hidden" name="vads_cust_phone" value="@ViewBag.vads_cust_phone" />
-                        <input type="hidden" name="vads_page_action" value="@ViewBag.vads_page_action" />
-                        <input type="hidden" name="vads_payment_config" value="@ViewBag.vads_payment_config" />
-                        <input type="hidden" name="vads_site_id" value="@ViewBag.vads_site_id" />
-                        <input type="hidden" name="vads_trans_date" value="@ViewBag.vads_trans_date" />
-                        <input type="hidden" name="vads_trans_id" value="@ViewBag.vads_trans_id" />
-                        <input type="hidden" name="vads_version" value="@ViewBag.vads_version" />
-                        <input type="hidden" name="signature" value="@ViewBag.signature" />
-                        <input class="w-100 btn btn-primary btn-lg" type="submit"  name="pagar" value="Pagar" />
-                    </form>
-                </div>         
+            <b>
+                <div class="innerIam">
+                    Redirección con C#<br />
+                    Redirección con C#<br />
+                    Redirección con C#<br />
+                    <br />
+                </div>
+            </b>
+        </div>
+
+        <form class="form" name="formulario" method="POST" action="https://secure.micuentaweb.pe/vads-payment/">
+
+            <div class="inputContainer">
+                <input id="campo1" type="text" class="input" placeholder="" name="vads_action_mode" value="@Model.vads_action_mode" readonly />
+                <label for="" class="label">vads_action_mode</label>
+            </div>
+
+            <div class="inputContainer">
+                <input id="campo2" type="text" class="input" placeholder="" name="vads_amount" value="" />
+                <label for="" class="label">vads_amount / (MONTO A PAGAR)</label>
+            </div>
+
+            <div class="inputContainer">
+                <input id="campo3" type="text" class="input" placeholder="" name="vads_ctx_mode" value=""  />
+                <label for="" class="label">vads_ctx_mode</label>
+            </div>
+
+            <div class="inputContainer">
+                <input id="campo4" type="text" class="input" placeholder="" name="vads_currency" value=""  />
+                <label for="" class="label">vads_currency / (MONEDA DE PAGO)</label>
+            </div>
+
+            <div class="inputContainer">
+                <input id="campo5" type="text" class="input" placeholder="" name="vads_page_action" value="@Model.vads_page_action" readonly />
+                <label for="" class="label">vads_page_action</label>
+            </div>
+
+            <div class="inputContainer">
+                <input id="campo6" type="text" class="input" placeholder="" name="vads_payment_config" value="@Model.vads_payment_config" readonly />
+                <label for="" class="label">vads_payment_config</label>
+            </div>
+
+            <div class="inputContainer">
+                <input id="campo7" type="text" class="input" placeholder="" name="vads_site_id" value=""  />
+                <label for="" class="label">vads_site_id / (CODIGO DE LA TIENDA)</label>
+            </div>
+
+            <div class="inputContainer">
+                <input id="campo8" type="text" class="input" placeholder="" name="vads_trans_date" value="" readonly />
+                <label for="" class="label">vads_trans_date / (FECHA DE PAGO UTC)</label>
+            </div>
+
+            <div class="inputContainer">
+                <input id="campo9" type="text" class="input" placeholder="" name="vads_trans_id" value="" />
+                <label for="" class="label">vads_trans_id / (ORDEN DE PAGO)</label>
+            </div>
+
+            <div class="inputContainer">
+                <input id="campo10" type="text" class="input" placeholder="" name="vads_version" value="@Model.vads_version" readonly />
+                <label for="" class="label">vads_version / (VERSION)</label>
+            </div>
+
+            <div class="inputContainer">
+                <input id="campo11" type="text" class="input" placeholder="" name="signature" value="" readonly />
+                <label for="" class="label">signature / (FIRMA EN BASE 64)</label>
+            </div>
+
+            <input id="key" type="hidden" value="@Model.KEY" />
+
+            <input class="submitBtn" onClick="javascript:procesar();" type="submit" name="pagar" value="PAGAR" />
+
+        </form>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/hmac-sha256.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/enc-base64.min.js"></script>
+        <script>
+
+            //Formato UTC, la fecha UTC es la fecha actual + 5 horas
+            var utcDate = new Date().toISOString().replace(/T/, '').replace(/\..+/, '').replace(/-/, '').replace(/-/, '').replace(/:/, '').replace(/:/, '')
+            document.formulario.campo8.value = utcDate.replace(/ /g, "");
+
+            function procesar() {
+
+                campo1 = document.getElementById('campo1').value;
+                campo2 = document.getElementById('campo2').value;
+                campo3 = document.getElementById('campo3').value;
+                campo4 = document.getElementById('campo4').value;
+                campo5 = document.getElementById('campo5').value;
+                campo6 = document.getElementById('campo6').value;
+                campo7 = document.getElementById('campo7').value;
+                campo8 = document.getElementById('campo8').value;
+                campo9 = document.getElementById('campo9').value;
+                campo10 = document.getElementById('campo10').value;
+                llave = document.getElementById('key').value;
+
+
+                final = campo1 + "+" + campo2 + "+" + campo3 + "+" + campo4 + "+" + campo5 + "+" + campo6 + "+" + campo7 + "+" + campo8 + "+" + campo9 + "+" + campo10 + "+" + llave;
+                key = llave;
+
+                hash = CryptoJS.HmacSHA256(final, key);
+
+                hashInBase64 = CryptoJS.enc.Base64.stringify(hash);
+
+                document.getElementById('campo11').value = hashInBase64;
+                console.log("Cadena String64= " + hashInBase64)
+
+                document.forms.ejemplo.submit();
+            }
+        </script>
+    </div>
+
 </body>
 </html>
