@@ -27,7 +27,7 @@ git clone https://github.com/izipay-pe/Redirect-PaymentForm-T1.Net.git
 
 * Editar el archivo en la siguiente ruta `RedirectPaymentForm -> Controllers -> HomeController.cs` con las claves de su Back Office Vendedor
 
-  ![ruta](images/ruta.png)
+  ![controlador](images/controlador.png)
 
   ```c#   
   public IActionResult Index()
