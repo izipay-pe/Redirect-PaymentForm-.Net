@@ -1,7 +1,7 @@
 # Redirect-PaymentForm-T1.Net
 
 Ejemplo del formulario en REDIRECCION de Izipay con C# .NET.
-![pagar](images/pagar.png)
+![pagar](images/pagar2.png)
 
 ## Requisitos Previos
 
@@ -33,7 +33,7 @@ CLAVE BACK OFFICE VENDEDOR (TEST O PRODUCCION)
 *TIPO DE HMAC
 SHA256
 ``` 
-* Darke en Crear 
+* Darle en Crear 
 ![Claves](images/generador.png)
 * Generara una clave 
 ![Claves](images/generador2.png)
