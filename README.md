@@ -42,7 +42,7 @@ git clone https://github.com/izipay-pe/Redirect-PaymentForm-T1.Net.git
             return View(pago);
         }  
   ```
-  
+  ![demo2](images/demo2.png)
 ## 3.- Transacción de prueba
 
 El formulario de pago está listo, puede intentar realizar una transacción utilizando una tarjeta de prueba con la barra de herramientas de depuración (en la parte inferior de la página).
