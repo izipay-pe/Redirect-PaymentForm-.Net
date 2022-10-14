@@ -1,7 +1,7 @@
 # Redirect-PaymentForm-T1.Net
 
 Ejemplo del formulario en REDIRECCION de Izipay con C# .NET.
-![pagar](images/pagar2.png)
+![pagar](images/pagar.png)
 
 ## Requisitos Previos
 
