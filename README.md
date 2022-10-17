@@ -8,6 +8,7 @@ Ejemplo del formulario en REDIRECCION de Izipay con C# .NET, para poder ejecutar
 ## Requisitos Previos
 
 * Extraer credenciales del Back Office Vendedor. [Guía Aquí](https://github.com/izipay-pe/obtener-credenciales-de-conexion)
+* Descargar el manual desde [Manual Izipay - implementación en REDIRECCIÓN](https://secure.micuentaweb.pe/doc/es-PE/form-payment/quick-start-guide/sitemap.html).
 * Instalar Visual Studio [Aquí](https://visualstudio.microsoft.com/es/)
 * Version de .NET CORE de 3 en adelante
 
@@ -45,11 +46,10 @@ git clone https://github.com/izipay-pe/Redirect-PaymentForm-T1.Net.git
   ![demo2](images/demo2.png)
 ## 3.- Transacción de prueba
 
-El formulario de pago está listo, puede intentar realizar una transacción utilizando una tarjeta de prueba con la barra de herramientas de depuración (en la parte inferior de la página).
-
-Para obtener más información, eche un vistazo a:
-
-- [Formulario Redireccion](https://secure.micuentaweb.pe/doc/es-PE/form-payment/standard-payment/sitemap.html)
+El formulario de pago está listo, puede intentar realizar una transacción utilizando una tarjeta de prueba. Consulte tarjetas de prueba [Aquí](https://secure.micuentaweb.pe/doc/es-PE/rest/V4.0/api/kb/test_cards.html).   
+*Número de tarjeta*: 4970100000000055   
+*Fecha de vencimiento*: 12/30   
+*Código de seguridad*: 123
  
 ## 4.- Implementar IPN
 
