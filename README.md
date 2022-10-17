@@ -47,8 +47,6 @@ git clone https://github.com/izipay-pe/Redirect-PaymentForm-T1.Net.git
 
 El formulario de pago está listo, puede intentar realizar una transacción utilizando una tarjeta de prueba con la barra de herramientas de depuración (en la parte inferior de la página).
 
-  ![tarjeta](images/tarjetas2.png)
-
 Para obtener más información, eche un vistazo a:
 
 - [Formulario Redireccion](https://secure.micuentaweb.pe/doc/es-PE/form-payment/standard-payment/sitemap.html)
