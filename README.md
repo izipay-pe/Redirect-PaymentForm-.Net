@@ -28,7 +28,7 @@ git clone https://github.com/izipay-pe/Redirect-PaymentForm-T1.Net.git
 
 * Editar el archivo en la siguiente ruta `RedirectPaymentForm -> Controllers -> HomeController.cs` con las claves de su Back Office Vendedor
 
- ![controlador](images/controlador2.png)
+     ![controlador](images/controlador2.png)
 
   ```c#   
   public IActionResult Index()
@@ -43,7 +43,7 @@ git clone https://github.com/izipay-pe/Redirect-PaymentForm-T1.Net.git
             return View(pago);
         }  
   ```
-  ![demo2](images/demo2.png)
+     ![demo2](images/demo2.png)
 ## 3.- Transacción de prueba
 
 El formulario de pago está listo, puede intentar realizar una transacción utilizando una tarjeta de prueba. Consulte tarjetas de prueba [Aquí](https://secure.micuentaweb.pe/doc/es-PE/rest/V4.0/api/kb/test_cards.html).   
