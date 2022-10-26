@@ -2,7 +2,7 @@
 
 Ejemplo del formulario en REDIRECCION de Izipay con C# .NET, para poder ejecutar el siguiente ejemplo seguir los pasos del presente manual.
 
-![pagar](images/demofinal2.png)
+![pagar](images/formulario-redireccion.png)
 
 <a name="Requisitos_Previos"></a>
 ## Requisitos Previos
