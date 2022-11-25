@@ -71,8 +71,6 @@ NOTA:
      Cambie el valor de la clave de prueba con el valor de su clave de producción para calcular la firma.
      Encontrará este valor en el menú Configuración > Tienda > pestaña Claves .
      Complete la URL de notificación correctamente al final del pago en el modo PRODUCCIÓN en el menú Configuración > Reglas de notificaciones .
-
-2.- No tengo una cuenta activa con Izipay. [Suscribete Aquí](https://online.izipay.pe/comprar/cliente)
  
 ## 4.- Implementar IPN
 
