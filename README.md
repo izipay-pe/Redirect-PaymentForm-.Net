@@ -12,7 +12,7 @@ C# es un lenguaje de programación multiparadigma y muy sofisticado que ha evolu
 
 ## Requisitos Previos
 
-* Extraer credenciales del Back Office Vendedor. [Guía Aquí](https://github.com/izipay-pe/obtener-credenciales-de-conexion)
+* Acceso al Back Office Vendedor (BOV) y Claves de autenticación. [Guía Aquí](https://github.com/izipay-pe/obtener-credenciales-de-conexion)
 * Descargar el manual desde [Manual Izipay - implementación en REDIRECCIÓN](https://secure.micuentaweb.pe/doc/es-PE/form-payment/quick-start-guide/sitemap.html).
 * Instalar Visual Studio [Aquí](https://visualstudio.microsoft.com/es/)
 * Version de .NET CORE de 3 en adelante
