@@ -1,4 +1,4 @@
-# Redirect-PaymentForm-T1.Net
+# Redirect-PaymentForm.Net
 
 Ejemplo del formulario en REDIRECCION de Izipay con C# .NET, para poder ejecutar el siguiente ejemplo seguir los pasos del presente manual.
 
@@ -13,9 +13,9 @@ Ejemplo del formulario en REDIRECCION de Izipay con C# .NET, para poder ejecutar
 * Version de .NET CORE de 3 en adelante
 
 ## 1.- Crear el proyecto
-Descargar el proyecto .zip haciendo click [Aquí](https://github.com/izipay-pe/Redirect-PaymentForm-T1.Net/archive/refs/heads/main.zip) o clonarlo desde Git.
+Descargar el proyecto .zip haciendo click [Aquí](https://github.com/izipay-pe/Redirect-PaymentForm.Net/archive/refs/heads/main.zip) o clonarlo desde Git.
 ```sh
-git clone https://github.com/izipay-pe/Redirect-PaymentForm-T1.Net.git
+git clone https://github.com/izipay-pe/Redirect-PaymentForm.Net.git
 ``` 
 * Correr con IIS Express de manera Local 
 * Ejecútelo y pruébelo con el siguiente comando: `F5` desde la Vista `Home` `Index.cshtml` y abrira con su navegador web predeterminado
@@ -53,6 +53,19 @@ El formulario de pago está listo, puede intentar realizar una transacción util
 *Código de seguridad*: 123
  
 ## 4.- Implementar IPN
+
+IPN son las siglas de Instant Payment Notification (URL de notificación instantánea, en inglés). Al crear una transacción o cambiar su estado, nuestros servidores emitirán una IPN que llamará a una URL de notificación en sus servidores. Esto le permitirá estar informado en tiempo real de los cambios realizados en una transacción.
+
+Las IPN son la única manera de recibir notificaciones en los casos siguientes:
+
+* La conexión a Internet del comprador se ha cortado.
+* El comprador cierra su navegador durante el pago.
+* Se ha rechazado una transacción.
+* El comprador no ha terminado su pago antes de la expiración de su sesión de pago.
+
+Por lo tanto, es obligatorio integrar las IPN.
+
+
 
 * Ver manual de implementacion de la IPN [Aquí](https://secure.micuentaweb.pe/doc/es-PE/rest/V4.0/kb/payment_done.html)
 
