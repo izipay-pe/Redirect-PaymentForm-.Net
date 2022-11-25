@@ -75,7 +75,9 @@ NOTA:
  
 ## 4.- Gestionar la notificacion de fin de pago (IPN)
 
+<p align="justify">
 IPN son las siglas de Instant Payment Notification (URL de notificación instantánea, en inglés). Al crear una transacción o cambiar su estado, nuestros servidores emitirán una IPN que llamará a una URL de notificación en sus servidores. Esto le permitirá estar informado en tiempo real de los cambios realizados en una transacción.
+</p>
 
 Las IPN son la única manera de recibir notificaciones en los casos siguientes:
 
