@@ -1,10 +1,15 @@
 # Redirect-PaymentForm.Net
 
-Ejemplo del formulario en REDIRECCION de Izipay con C# .NET, para poder ejecutar el siguiente ejemplo seguir los pasos del presente manual.
+Ejemplo del formulario Redirect, para utilizar C# .NET dentro de tu proyecto, te permitirá hacer un énfasis en la transparencia de redes, con independencia de plataforma de hardware y que permite un rápido desarrollo de aplicaciones.
+
+C# es un lenguaje de programación multiparadigma y muy sofisticado que ha evolucionado en conjunto con el framework de Microsoft .NET. Tiene nuevas características, como tipos por referencia nullables, rangos, índices, streams asíncronos.
 
 ![pagar](images/formulario-redireccion.png)
 
+## Este es un ejemplo de como poder integrar un formulario embebido utilizando el Lenguaje de Programación C# con el Framework .NET. Este ejemplo es solo una guía para poder realizar la integración de la pasarela de pagos, puede realizar las modificaciones necesarias para su proyecto.   
+
 <a name="Requisitos_Previos"></a>
+
 ## Requisitos Previos
 
 * Extraer credenciales del Back Office Vendedor. [Guía Aquí](https://github.com/izipay-pe/obtener-credenciales-de-conexion)
