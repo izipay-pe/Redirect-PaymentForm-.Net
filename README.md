@@ -74,7 +74,7 @@ NOTA:
      Encontrará este valor en el menú Configuración > Tienda > pestaña Claves .
      Complete la URL de notificación correctamente al final del pago en el modo PRODUCCIÓN en el menú Configuración > Reglas de notificaciones .
  
-## 4.- Implementar IPN
+## 4.- Gestionar la notificacion de fin de pago (IPN)
 
 IPN son las siglas de Instant Payment Notification (URL de notificación instantánea, en inglés). Al crear una transacción o cambiar su estado, nuestros servidores emitirán una IPN que llamará a una URL de notificación en sus servidores. Esto le permitirá estar informado en tiempo real de los cambios realizados en una transacción.
 
