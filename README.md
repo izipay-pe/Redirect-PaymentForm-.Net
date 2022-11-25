@@ -1,4 +1,4 @@
-# Redirect-PaymentForm.Net
+# Redirect-PaymentForm-.Net
 
 Ejemplo del formulario en Redirección, para utilizar C# .NET dentro de tu proyecto, te permitirá hacer un énfasis en la transparencia de redes, con independencia de plataforma de hardware y que permite un rápido desarrollo de aplicaciones.
 
@@ -6,7 +6,7 @@ C# es un lenguaje de programación multiparadigma y muy sofisticado que ha evolu
 
 ![pagar](images/formulario-redireccion.png)
 
-## Este es un ejemplo de como poder integrar un formulario en Redirección utilizando el Lenguaje de Programación C# con el Framework .NET. Este ejemplo es solo una guía para poder realizar la integración de la pasarela de pagos, puede realizar las modificaciones necesarias para su proyecto.   
+## Este ejemplo es solo una guía para poder realizar la integración de la pasarela de pagos, puede realizar las modificaciones necesarias para su proyecto.   
 
 <a name="Requisitos_Previos"></a>
 
@@ -18,9 +18,9 @@ C# es un lenguaje de programación multiparadigma y muy sofisticado que ha evolu
 * Version de .NET CORE de 3 en adelante
 
 ## 1.- Crear el proyecto
-Descargar el proyecto .zip haciendo click [Aquí](https://github.com/izipay-pe/Redirect-PaymentForm.Net/archive/refs/heads/main.zip) o clonarlo desde Git.
+Descargar el proyecto .zip haciendo click [Aquí](https://github.com/izipay-pe/Redirect-PaymentForm-.Net/archive/refs/heads/main.zip) o clonarlo desde Git.
 ```sh
-git clone https://github.com/izipay-pe/Redirect-PaymentForm.Net.git
+git clone https://github.com/izipay-pe/Redirect-PaymentForm-.Net.git
 ``` 
 * Correr con IIS Express de manera Local 
 * Ejecútelo y pruébelo con el siguiente comando: `F5` desde la Vista `Home` `Index.cshtml` y abrira con su navegador web predeterminado
