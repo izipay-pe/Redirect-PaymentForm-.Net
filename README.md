@@ -62,17 +62,12 @@ Puede consultar las tarjetas de prueba desde este enlace: [Tarjetas de Prueba](h
 NOTA: 
 
 1.- Paso de la tienda al modo PRODUCTION 
-
-     Modifique su implementación para utilizar Incrustado:
-     * la contraseña de producción,
-     * clave pública de producción,
-     * la clave HMAC-SHA-256 de producción para calcular la firma contenida en el campo kr-hash.
      
      Modifique su implementación para utilizar redireccion:
-     Complete el campo vads_ctx_mode a PRODUCTION .
-     Cambie el valor de la clave de prueba con el valor de su clave de producción para calcular la firma.
-     Encontrará este valor en el menú Configuración > Tienda > pestaña Claves .
-     Complete la URL de notificación correctamente al final del pago en el modo PRODUCCIÓN en el menú Configuración > Reglas de notificaciones .
+     * Complete el campo vads_ctx_mode a PRODUCTION .
+     * Cambie el valor de la clave de prueba con el valor de su clave de producción para calcular la firma.
+     * Encontrará este valor en el menú Configuración > Tienda > pestaña Claves .
+     * Complete la URL de notificación correctamente al final del pago en el modo PRODUCCIÓN en el menú Configuración > Reglas de notificaciones .
  
 ## 4.- Gestionar la notificacion de fin de pago (IPN)
 
