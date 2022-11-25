@@ -47,13 +47,17 @@ git clone https://github.com/izipay-pe/Redirect-PaymentForm-.Net.git
         }  
   ```
      ![demo2](images/demo2.png)
+     
 ## 3.- Transacción de prueba
 
-El formulario de pago está listo, puede intentar realizar una transacción utilizando una tarjeta de prueba. Consulte tarjetas de prueba [Aquí](https://secure.micuentaweb.pe/doc/es-PE/rest/V4.0/api/kb/test_cards.html).   
+El formulario de pago está listo, puede intentar realizar una transacción utilizando una tarjeta de prueba. 
 
-*Número de tarjeta*: 4970100000000055   
-*Fecha de vencimiento*: 12/30   
-*Código de seguridad*: 123
+Puede consultar las tarjetas de prueba desde este enlace: [Tarjetas de Prueba](https://secure.micuentaweb.pe/doc/es-PE/rest/V4.0/api/kb/test_cards.html).
+
+   * Tarjeta de prueba Visa:
+      - *Número de tarjeta*: 4970100000000055
+      - *Fecha de vencimiento*: 12/30   
+      - *Código de seguridad*: 123
 
 NOTA: 
 
