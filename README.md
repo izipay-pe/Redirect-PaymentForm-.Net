@@ -66,10 +66,9 @@ NOTA:
 1.- Paso de la tienda al modo PRODUCTION 
      
      Modifique su implementación para utilizar redireccion:
-     * Complete el campo vads_ctx_mode a PRODUCTION .
+     * Complete el campo KEY a PRODUCTION .
      * Cambie el valor de la clave de prueba con el valor de su clave de producción para calcular la firma.
      * Encontrará este valor en el menú Configuración > Tienda > pestaña Claves .
-     * Complete la URL de notificación correctamente al final del pago en el modo PRODUCCIÓN en el menú Configuración > Reglas de notificaciones .
  
 ## 4.- Gestionar la notificacion de fin de pago (IPN)
 
