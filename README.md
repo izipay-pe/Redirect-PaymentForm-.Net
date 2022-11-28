@@ -1,7 +1,7 @@
 # Redirect-PaymentForm-.Net
 
 <p align="justify">
-Ejemplo del formulario en Redirección con C# y el Framework .NET, este ejemplo C# es un lenguaje de programación multiparadigma y muy sofisticado que ha evolucionado en conjunto con el framework de Microsoft .NET. Tiene nuevas características, como tipos por referencia nullables, rangos, índices, streams asíncronos.
+Ejemplo del formulario en Redirección con C# y el Framework .NET, este ejemplo esta hecho con el lenguaje de programación C# la cual es un multiparadigma y muy sofisticado que ha evolucionado en conjunto con el framework de Microsoft .NET. Tiene nuevas características, como tipos por referencia nullables, rangos, índices y streams asíncronos.
 </p> 
 
 ![pagar](images/formulario-redireccion.png)
